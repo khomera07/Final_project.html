@@ -1,0 +1,50 @@
+.according-container {
+    border: solid #ccc;
+    border-bottom: 0;
+    margin-bottom: 30px;
+
+}
+
+.accardion-item {
+
+}
+
+.accardion-header {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    padding: 10px 20px;
+    display: flex;  /* იმისთვის რომ ისარი გადავიტანოთ უკიდურეს მარკვენა წერტილში ვიყენებთ display: flex */
+    justify-content: space-between; /* იმისთვის რომ ისარი გადავიტანოთ უკიდურეს მარკვენა წერტილში ვიყენებთ justify-content: space-between */
+    align-items: center; /*ისარს აცენტრებს ზემოდან და ქვემოდან*/
+    cursor: pointer;
+}
+
+.accardion-header:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.accardion-header img {
+    width: 15px;
+  
+}
+
+.accordion-body {
+    font-size: 16px;
+    /* font-weight: bold; */
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px;
+    display: none;  /*აღნიშნული ბრძანება თიშავს ბოდის შიგნით არსებულ ინფორმაციას და ის იკეცება ისრის ქვეშ*/
+
+}
+
+.accardion-item.active .accordion-body {
+    display: block;
+
+}
+
+.accardion-item.active .accardion-header img{  
+ transform: rotate(180deg);  /*ისარს ატრიალებს და მიმართავს ზემოთ როდესაც ის ჩამოიშლება*/
+}
+
+    

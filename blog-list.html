@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ავტორიზაცია</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/card.css">
+    <link rel="stylesheet" href="./style/auth.css">
+</head>
+
+<body>
+    <header class="d-flex">  <!--აღნიშნული კლასის გაწერის დროს ლოგო და ნავიგაციის ღილაკები გაცენტრდებიან-->
+        <div class="container d-flex"><!--იმისთვის რომ ნავიგაციების ღილაკი ჩაჯდეს მთავარ 1200 პიქსელიან კონტეინერში აღნიშნულს ვუქვემდებარებთ დანარჩენს-->
+            <a href="#">
+                <img class="logo" src="./style/icons/logo.svg" alt="საიტის ლოგო">
+            </a>
+            <nav class="d-flex">
+                <div>
+                    <a href="./blog-list.html">HOME</a>
+                    <a href="./help.html">HELP</a>
+                    <a href="./blog-list.html">BLOG</a>
+                    <a href="./rules.html">RULES</a>
+                    <a href="./contact.html">CONTACT</a>
+                </div>
+                <div>
+                   <a href="./registration.html">REGISTRATION</a> <!--ნავიგაციის ბარში მარჯვენა კუთხეში შევქმნათ რეგისტრაციის და შესვლის ღილაკები-->
+                   <a href="./auth.html">ENTER</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container body-container blog-main-container">
+        <a href="#" class="main-category-item">
+            <img src="./style/icons/earth-europe-solid.svg" alt="europe">
+            <h3>WORLD</h3>
+        </a>
+        <a href="#" class="main-category-item">
+            <img src="./style/icons/palette-solid.svg" alt="culture">
+            <h3>CULTURE</h3>
+        </a>
+        <a href="#" class="main-category-item">
+            <img src="./style/icons/futbol-solid.svg" alt="sport">
+            <h3>SPORT</h3>
+        </a>
+        <a href="#" class="main-category-item">
+            <img src="./style/icons/masks-theater-solid.svg" alt="art">
+            <h3>ART</h3>
+        </a>
+            <ul class="category-navigation-list">
+                <li><a class="d-block" href="./blog-detail.html">NEWS</a></li>
+                <li><a class="d-block" href="./blog-detail.html">LATEST</a></li>
+                <li><a class="d-block" href="./blog-detail.html">UKRAINE</a></li>
+                <li><a class="d-block" href="./blog-detail.html">POLITICS</a></li>
+                <li><a class="d-block" href="./blog-detail.html">CORONAVIRUS</a></li>
+                <li><a class="d-block" href="./blog-detail.html">ECONOMY</a></li>
+                <li><a class="d-block" href="./blog-detail.html">INTERVIEWS</a></li>
+                <li><a class="d-block" href="./blog-detail.html">NATURE</a></li>
+                <li><a class="d-block" href="./blog-detail.html">SCIENCE</a></li>
+                <li><a class="d-block" href="./blog-detail.html">EDUTATION</a></li>
+
+                <div class="img-container-ads">
+                    <img class="card-img-ads" src="./style/img/the-blowup-rJeWeq9E2Dk-unsplash.jpg" alt=" ads place ">
+                    <img class="card-img-ads-1" src="./style/img/hannes-egler-a9zeXX25lC8-unsplash.jpg" alt=" ads place ">
+                </div>
+
+            </ul>
+
+
+            <div class="blog-container">
+                <div class="card">
+                    <div class="img-container">
+                        <img class="card-img" src="./style/img/Article img/news.jpg" alt=" NEWS ">
+                        <img class="fav-img" src="./style/icons/heart-regular.svg" alt=" add as a favorit ">
+                        <span>12/10/2020</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Header of article</h3>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."                        </p>
+                        <div class="action-container">
+                            <button class="btn">more...</button>
+                            <div>
+                                <img src="./style/icons/share.svg" alt="share">
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img class="card-img" src="./style/img/Article img/politics.jpg" alt=" POLITICS ">
+                        <img class="fav-img" src="./style/icons/heart-regular.svg" alt=" add as a favorit ">
+                        <span>12/10/2020</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Header of article</h3>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."                        </p>
+                        <div class="action-container">
+                            <button class="btn">more...</button>
+                            <div>
+                                <img src="./style/icons/share.svg" alt="share">
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img class="card-img" src="./style/icons/pexels-eric-anada-1495580.jpg" alt=" UKRAINE ">
+                        <img class="fav-img" src="./style/icons/heart-regular.svg" alt=" add as a favorit ">
+                        <span>12/10/2020</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Header of article</h3>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."                        </p>
+                        <div class="action-container">
+                            <button class="btn">more...</button>
+                            <div>
+                                <img src="./style/icons/share.svg" alt="share">
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img class="card-img" src="./style/img/Article img/Covid-19.jpg" alt=" CORONAVIRUS ">
+                        <img class="fav-img" src="./style/icons/heart-regular.svg" alt=" add as a favorit ">
+                        <span>12/10/2020</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Header of article</h3>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."                        </p>
+                        <div class="action-container">
+                            <button class="btn">more...</button>
+                            <div>
+                                <img src="./style/icons/share.svg" alt="share">
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img class="card-img" src="./style/img/Article img/education.jpg" alt=" EDUTATION ">
+                        <img class="fav-img" src="./style/icons/heart-regular.svg" alt=" add as a favorit ">
+                        <span>12/10/2020</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Header of article</h3>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."                        </p>
+                        <div class="action-container">
+                            <button class="btn">more...</button>
+                            <div>
+                                <img src="./style/icons/share.svg" alt="share">
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img class="card-img" src="./style/img/Article img/nature.jpg" alt=" NATURE ">
+                        <img class="fav-img" src="./style/icons/heart-regular.svg" alt=" add as a favorit ">
+                        <span>12/10/2020</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Header of article</h3>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."                        </p>
+                        <div class="action-container">
+                            <button class="btn">more...</button>
+                            <div>
+                                <img src="./style/icons/share.svg" alt="share">
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img class="card-img" src="./style/img/Article img/journalist.jpg" alt=" JOURNALISM ">
+                        <img class="fav-img" src="./style/icons/heart-regular.svg" alt=" add as a favorit ">
+                        <span>12/10/2020</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Header of article</h3>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."                        </p>
+                        <div class="action-container">
+                            <button class="btn">more...</button>
+                            <div>
+                                <img src="./style/icons/share.svg" alt="share">
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img class="card-img" src="./style/img/Article img/science.jpg" alt=" SCIENCE ">
+                        <img class="fav-img" src="./style/icons/heart-regular.svg" alt=" add as a favorit ">
+                        <span>12/10/2020</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Header of article</h3>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."                        </p>
+                        <div class="action-container">
+                            <button class="btn">more...</button>
+                            <div>
+                                <img src="./style/icons/share.svg" alt="share">
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img class="card-img" src="./style/img/Article img/economy.jpg" alt=" ECONOMY ">
+                        <img class="fav-img" src="./style/icons/heart-regular.svg" alt=" add as a favorit ">
+                        <span>12/10/2020</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Header of article</h3>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."                        </p>
+                        <div class="action-container">
+                            <button class="btn">more...</button>
+                            <div>
+                                <img src="./style/icons/share.svg" alt="share">
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+    </div>
+ 
+    <footer>
+        <div class="container">
+            <p>Slava UkraineOn</p>
+            <p>On 24 February 2022, Russian forces crossed the border in a full-scale invasion of Ukraine.</p>        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,244 @@
+
+@import url(./colors.css);
+
+* {
+    font-family: 'Noto Sans Georgian' sans-serif;
+    box-sizing: border-box;
+
+}
+
+/* reset styles */
+body{
+    margin: 0;
+    min-height: 100vh; /*აღნიშნული პორტის გამოყენება გვაქძლევს საშუალებას მთლიან ეკრანს ვხედავდეთ */
+}
+
+/* global style */
+.container{
+    width: 992px;
+    margin: auto;
+    /* background-color: violet; */
+}
+.view-port-fit {
+    min-height: calc(100vh - (70 + 80));
+}
+
+.d-flex{  /*html-ში მთავარ კონტეინერს გავუწერეთ d-flex რაც შემდეგ სტილებში გამოვიყენეთ და მოგვცა საშუალება ლოგო ჩამოიწია დაბლა ხოლო ნავიგაციის ღილაკები აიწია მაღლა*/
+   display: flex; 
+}
+/* header styles*/
+header{
+    height: 70px;
+    background-color: var(--blue);
+    align-items: center; /*აღნიშნულის გაცერის დროს ნავიგაციის ბარი და ლოგო თავის კონტეინერში ცენტრდება */
+}
+header .logo{
+    width: 45px;
+    height: 45px;
+}
+
+header .mobile-menu{
+    display: none;
+    color: white;
+}
+
+header .container{ 
+    align-items: center; /*ნავიგაცია უსწორდება ლოგოს*/
+} 
+
+nav{ /*აღნიშნული ქმედებით რეგისტრაციისა და შესვლის ღილაკები გადაგვაქვს მარჯვნივ ნავიგაციის ბარში*/
+    display: flex;
+    width: calc(100% - 45px);
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+nav a{ /*ნავიგაციის ღილაკები*/
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+nav a:hover{ /*მაუსის მიტანისას ნავიგაციის ღილაკები გაიხაზება*/
+text-decoration: underline;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    background-color:var(--orange);
+    box-sizing: border-box;
+    height: 80px;
+    
+}
+
+footer p{
+    margin: 0;
+}
+
+/*auth-form-container*/
+.auth-form-container{
+    width: 300px;
+    min-height: 200px;
+    border: 1px solid #ccc;
+    margin: auto;
+    padding: 15px; /*padding აშორებს ელემენტს კონტეინერის შიდა კედლიდან*/
+    box-sizing: border-box;
+}
+
+.auth-form-container .text-input-label{
+    display: block; /*label გადაიქცა blok-ურ ელემენტად, ანუ ლეიბლის სიგანე გახდა რელევენტური მისი მშობელი კონტეინერის*/
+    margin-bottom: 5px;
+}
+.auth-form-container .text-input{
+    height: 22px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid black;
+
+}
+
+.form-group{
+    margin-bottom: 15px; /* აშორებს ელემენტს კონტეინერის ქვედა კედლიდან*/
+}
+.w-100{ /*ეს კლასი გვაქვს ეგრედცოდებული ცვლადივით, და გვიჩვენებს 100%იანი სიგანის მქონე ელემენტს, რომელიც შეგვიძლია გავწეროთ html-ში და მზა მივაბათ css-ს*/
+    width: 100%;
+}
+.mb-15{
+    margin-bottom: 15px; /*mb-15 მიშნავს margin bottom; 15px იმისთვის რომ შემდეგში როგორც ცვლადი ისე გამოვიყენოთ*/
+}
+.btn{ /*ეს ღილაკი რეგისტრაციაში გამოხატაბს ავტორიზაციის და რეგისტრაციის გაშვების სტილს*/
+display: block; /*ბლოკური განლაგებით განთავსდეს ანუ ზემოდან ქვემოთ*/
+font-size: 16px;
+height: 35px;
+text-align: center; /*ტექსტი ყოველთვის ცენტრში იყოს*/
+border: 0; /*ჩარჩო არ ქონდეს*/
+cursor: pointer; /*თითის კურსორი ჩნდებოდეს მიახლოების დროს*/
+}
+
+.btn-primary{
+    background-color: var(--violet);
+    color: white;
+}
+.btn-link{
+    text-decoration: none; /*რეგისტრაციაში ავტორიზაციას მოვაშორეთ ხაზი*/
+    line-height: 35px;
+    color: var(--violet);
+}
+.btn-link:hover{
+    text-decoration: underline; /*რეგისტრაციაში ავტორიზაციის ღილაკთან მაუსის მიტანის დროს ხაზავს ავტორიზაციის ღილაკს*/
+}
+
+
+/* რეგისტრაციის ქმედებები */
+.sex-container{
+    display: inline-block;
+}
+
+.auth-form-container .birth-locations{
+    height: 25px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid black;
+}
+
+.auth-form-container .birth-locations{
+    background-color: rgb(233, 230, 230);
+    
+}
+
+.body-container{
+padding: 30px 0;
+min-height: calc(100vh -(70px - 60px));
+box-sizing: border-box;
+}
+
+/* blog list after this line */
+
+.main-category-item{
+    border: 1px solid rgb(202, 201, 201);
+    flex-grow: 1;
+    text-align: center;
+    padding: 15px 20px;
+    /* margin: 0 15px;
+    width: 25%; */
+    text-decoration: none;
+    color: black;
+}
+.main-category-item:hover{ /*აღნიშნული ღილაკი მაუსის მიტანის დროს კონკრეტულ ღილაკთან უცვლის ფერს მაგალითად მსოფლიოს ღილაკთან მაუსის მიტანის დროს მსოფლიო მუქდება*/
+    border-color: black;
+    background-color: rgb(233, 233, 233);
+}
+.main-category-item :first-child{ /*აღნიშნულით ბოქსები რომელიც განთავსებულია მსოფლიოს და ხელოვნების სახით, მსოფლიო მიედგმება მთავარ კონტეინერს უკიდურეს მარცხენა წერტილში ხოლო 
+    ხელოვნება მარჯვენა წერტილში*/
+    margin-left: 0;
+
+}
+.main-category-item :last-child{
+    margin-right: 0;
+
+}
+
+
+.main-category-item img{
+    width: 45px;
+    height: 45px;
+}
+
+/* blog elements */
+
+.blog-main-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.category-navigation-list {
+    border: 1px solid rgb(235, 235, 235);
+    flex-basis: 18%;
+    padding: 25px 0 25px 40px;
+    list-style: none;
+    /* margin: 25px 15px;
+    width: 25%; */
+    background-color: rgb(243, 237, 237);
+    
+}
+
+.category-navigation-list a {
+    padding: 5px 0px;
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    padding-top: 3px;
+}
+
+.category-navigation-list a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+
+.blog-container {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr)); 
+	gap: 15px;  /*ქარდებს შორის დაშორება რომ გავაკეთოთ საჭიროა აღნიშნული ბრძანების შესრულება*/
+    grid-column: 2 / span 3; /*აღნიშნული ბრძანება გამოსახავს, ბლოგ კონტეინერში მოთავსებული გრაფების მეორე სვეტიდან დაწყებას და მაქსიმუმ ჩაამატებს სამ სვეტს ხოლო შემდეგ გატყდება და ქვემოთ 
+    ჩამოვარდება სანამ კიდე სამ სვეტს არ შეავსებს, ათვლა ყოველთვის დაიწყება მეორე სვეტიდან, მაგალითი მოცემულია ქარდების სახით*/
+}
+
+
+/* ads photos */
+.img-container-ads img {
+    width: 150px;
+    height: 300px;
+    padding-top: 50px;
+    
+    
+}
+

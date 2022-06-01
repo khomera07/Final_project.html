@@ -1,0 +1,41 @@
+.container.contact {  /*container-ს მივაკითხეთ და ვკითხეთ შენ თუ გაქვს contact-ის სახელით კლასი გამოგვიტანე და აღნიშნულზე მოვახდინეთ რეაგირება*/
+display: grid;  /*ნიშნავს ჩარჩოების გრიდის სტილში გამოტანას*/
+grid-template-columns: repeat(2, minmax(0, 1fr));
+width: 800px;
+
+}
+
+.container.contact label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.container.contact input,
+.container.contact textarea,
+ {
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    border: 1px solid black;
+    padding-inline: 15px;
+    font-size: 14px;
+
+
+}
+
+.container.contact textarea{
+    height: initial;
+    padding-block: 15px;
+}
+
+.container.contact button {
+    background: var(--violet);
+    color: white;
+    border: 0;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;  /*ეს უმრგვალებს კუთხეებს ღილაკს*/
+
+}

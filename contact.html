@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/auth.css">
+    <link rel="stylesheet" href="./style/contact.css">
+</head>
+
+<body>
+    <header class="d-flex">  <!--აღნიშნული კლასის გაწერის დროს ლოგო და ნავიგაციის ღილაკები გაცენტრდებიან-->
+        <div class="container d-flex"><!--იმისთვის რომ ნავიგაციების ღილაკი ჩაჯდეს მთავარ 1200 პიქსელიან კონტეინერში აღნიშნულს ვუქვემდებარებთ დანარჩენს-->
+            <a href="#">
+                <img class="logo" src="./style/icons/logo.svg" alt="საიტის ლოგო">
+            </a>
+            <nav class="d-flex">
+                <div>
+                    <a href="./blog-list.html">HOME</a>
+                    <a href="./help.html">HELP</a>
+                    <a href="./blog-list.html">BLOG</a>
+                    <a href="./rules.html">RULES</a>
+                    <a href="./contact.html">CONTACT</a>
+                </div>
+                <div>
+                   <a href="./registration.html">REGISTRATION</a> <!--ნავიგაციის ბარში მარჯვენა კუთხეში შევქმნათ რეგისტრაციის და შესვლის ღილაკები-->
+                   <a href="./auth.html">ENTER</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container contact">
+        <div>
+            <h1>Contact us</h1>
+            <p>fill all graphs and click on a send</p>
+            <form action="">
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Theme</label>
+                    <input type="text" id="subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Text</label>
+                    <textarea name="" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+        <div>
+            <h2> CONTACT INFORMATION</h2>
+            <ul>
+                <li><strong>FACEBOOK:</strong> <a href="#">Georgian news</a></li>  <!--strong ბრძანება აბოლდებს მასში მოთავსებულ მნიშვნელობას და ხდის მნიშვნელოვანს-->
+                <li><strong>ADRESS:</strong> RUSTAVELI #1</li> 
+                <li><strong>E-Mail:</strong> info@news.ge</li> 
+                <li><strong>CONTACT NUMBER:</strong> +995 593 200 200</li> 
+            </ul>
+        </div>
+    </div>    
+    <footer>
+        <div class="container">
+            <p>Slava UkraineOn</p>
+            <p>On 24 February 2022, Russian forces crossed the border in a full-scale invasion of Ukraine.</p>
+        </div>
+    </footer>
+</body>
+</html>
